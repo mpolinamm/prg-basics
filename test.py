@@ -1,11 +1,5 @@
-# 3x3 Tic-Tac-Toe board
-tic_tac_toe_board = [
-    ['X', 'O', 'X'],
-    [' ', 'X', 'O'],
-    ['O', ' ', 'X']
-]
+contacts_A = {"john@example.com", "alice@example.com", "bob@example.com"}
+contacts_B = {"bob@example.com", "michael@example.com", "sara@example.com"}
 
-for row in tic_tac_toe_board:
-    for item in row:
-        print(item, end=" ")
-    print()
+merged_contacts = contacts_A | contacts_B  # Union
+print("Merged contacts:", merged_contacts)
