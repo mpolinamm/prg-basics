@@ -27,7 +27,16 @@ while True:
         else:
             print("Insufficient balance.")
     elif choice == '4':
-        print("Exiting... Thank you for using the ATM!")
+        current_pin = input("Enter your current PIN: ")
+        if current_pin == pin:
+            new_pin = input("Enter a new 4-digit PIN: ")
+            if len(new_pin) == 4 and new_pin.isdigit():
+                pin = new_pin
+                print("PIN successfully changed.")
+            else:
+                print("Invalid PIN. It must be exactly 4 digits.")
+        else:
+            print("Incorrect current PIN.")
     elif choice == '5':
         print("Exiting... Thank you for using the ATM!")
         break  
