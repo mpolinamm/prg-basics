@@ -1,6 +1,5 @@
 import turtle
-from figures import draw_square, draw_triangle, draw_rectangle
-
+from figures2 import draw_square, draw_triangle, draw_rectangle
 # Set up the screen
 window = turtle.Screen()
 window.bgcolor("lightgreen")

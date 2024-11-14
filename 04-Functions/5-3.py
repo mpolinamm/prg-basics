@@ -1,6 +1,3 @@
-# employee_program.py
-# Allows entering and printing employee data with optional salary protection
-
 from keyboard53 import input_string, input_integer, input_real, input_boolean
 
 def main():
