@@ -5,6 +5,7 @@ class Book():
         self.author = author
         self.pages = pages
         self.current_page = 1
+        self.price = 48
         self.is_open = False
 
     def open(self):
@@ -19,6 +20,7 @@ class Book():
     def display_info(self):
         print(f"My favourite book is {self.title}.")
         print(f"Written by {self.author}.")
+        print(f"This book costs {self.price}$.")
         print(f"This book has {self.pages} pages.")
         if self.is_open:
             print(f"I am just reading the book, page {self.current_page}.")
